@@ -1,0 +1,132 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Work Sans", sans-serif;
+    }
+    html{
+      font-size: 16px;
+    }
+    body {
+      height: 100vh;
+      width: 100%;
+      background-color: rgb(213, 209, 215);
+      display: flex;                
+      justify-content: center;
+      align-items: center;
+      position: relative;           
+    }
+    
+    
+    .imageheader {
+      position: fixed;               
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 33vh;
+      z-index: 0;                     
+    }
+    .imageheader img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    
+    .container {
+      position: relative;
+      z-index: 1;                      
+      width: 40%;
+      max-width: 600px;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .maincontainer{
+      height: 100%;
+      width: 100%;
+    }
+    .starcontainer{
+      height: 80%;
+      width: 100%;
+      display: flex;
+      padding-bottom: 1rem;
+    }
+    .starcontainer h1{
+      margin-left: 1rem;
+      font-size: 2.3rem;
+      font-weight: 700;
+    }
+    .starcontainer .icon{
+      width:6%;
+    }
+    .accordian{
+      border-bottom: 1px solid grey;
+    }
+    .question{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    .question h2{
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .question h2:hover{
+      color: blueviolet;
+    }
+    .question img{
+      width: 5%;
+      transform: rotate(180deg);
+    }
+    .answer{
+      padding-top: 1rem;
+      max-height: 0;
+      overflow: hidden;
+      font-size: 0.9rem;
+      transition: max-height 0.4s ease, padding-bottom 0.4s ease;       
+
+    }
+    .answer.active{
+      max-height: 500px;
+      padding-bottom: 1rem;
+
+    }
+    
+    .icon.active{
+      transform: rotate(180deg);
+    }
+
+    @media (min-width: 700px) and (max-width: 900px) {
+      /* ✅ CSS rules for devices between 700px and 900px */
+      html{
+            font-size: 21px;
+      }
+      body {
+
+      }
+    
+      .container {
+        width: 75%;
+        padding: 1rem;
+      }
+    }
+
+    @media (min-width:319px) and (max-width:420px){
+      .container{
+            width: 90%;
+      }
+      .starcontainer .icon{
+            width: 22px;
+      }
+      .question .icon{
+            width: 22px;
+      }
+      .question h2{
+            max-width: 225px;
+      }
+    }
+    
