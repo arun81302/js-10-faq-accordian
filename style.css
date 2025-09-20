@@ -84,6 +84,7 @@
     }
     .answer{
       padding-top: 1rem;
+      color: hsl(292, 16%, 49%);
       max-height: 0;
       overflow: hidden;
       font-size: 0.9rem;
