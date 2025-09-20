@@ -116,7 +116,7 @@
       }
     }
 
-    @media (min-width:300px) and (max-width:420px){
+    @media (min-width:200px) and (max-width:420px){
       .container{
             width: 90%;
       }
